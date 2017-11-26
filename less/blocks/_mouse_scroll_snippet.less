@@ -3,7 +3,7 @@ a.mouse_scroll {
   display: block;
   margin: 0 auto;
   width: 24px;
-  height: 100px;
+  height: 50px;
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -13,6 +13,10 @@ a.mouse_scroll {
   -o-animation-delay: 1.2s;
   animation-delay: 1.2s;
   
+  @media screen and (min-width : 768px) {
+  	height: 100px;
+  }
+
   @media screen and (max-width : 820px) {
     bottom: 1rem;
   }
@@ -69,6 +73,11 @@ a.mouse_scroll {
   transform: none;
   border: 2px solid white;
   top: 170px;
+  display: none;
+  
+  @media only screen and (min-width: 768px) {
+		display: block;
+	}
 }
 .wheel {
   height: 5px;
