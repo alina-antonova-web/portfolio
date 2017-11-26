@@ -12,6 +12,9 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- FavIcons -->
@@ -32,18 +35,42 @@
 	    <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
 	<![endif]-->
 
-	<!-- Здесь пишем код -->
-
-
 
 	<!-- Header -->
-	<div class="block">
-		Шапка страницы
+	<div class="header">
+		<div class="header__container">
+			<nav class="navigation" id="navigation">
+				<div class="navigation__toggle-button" id="navigation__toggle">
+				</div>
+				<ul id="navigation__items">
+					<li><a href="#resume">Резюме</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<img  class="header__user-photo" src="usercontent/img/my-photo-small.jpg" alt="">
+			<div class="header__user-name">Алина Антонова</div>
+			<div class="header__user_profession">HTML верстальщик сайтов</div>
+		</div>
+
+		<!-- mouse_scroll -->
+		<a href="#resume" class="mouse_scroll">
+			<div class="mouse">
+				<div class="wheel"></div>
+			</div>
+			<div>
+				<span class="m_scroll_arrows unu"></span>
+				<span class="m_scroll_arrows doi"></span>
+				<span class="m_scroll_arrows trei"></span>
+			</div>
+		</a>
+		<!-- // mouse_scroll -->
+
 	</div>
 	<!-- // Header -->
 
 	<!-- Resume -->
-	<div class="container">
+	<div class="container" id="resume">
 		<div class="row">
 			
 			<!-- User photo -->
@@ -90,7 +117,7 @@
 
 
 	<!-- Portfolio -->
-	<div class="container">
+	<div class="container" id="portfolio">
 
 		<div class="block">
 			Мои работы
@@ -141,7 +168,7 @@
 
 
 	<!-- Contacts -->
-	<div class="block-bg">
+	<div class="block-bg" id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
@@ -202,6 +229,7 @@
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

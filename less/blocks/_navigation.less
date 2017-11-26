@@ -1,0 +1,114 @@
+@top: 30px;
+@right: 15px;
+
+.navigation {
+	padding-top: 95px;
+	height: @header_height--mobile;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	
+	@media only screen and (min-width: 768px) {
+		position: relative;
+		z-index: 1;
+		padding-top: 0;
+		height: auto;
+	}
+	
+	ul {
+		display: none;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		font-size: 0;
+		li {
+			display: block;
+			position: relative;
+			padding: 24px 20px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			
+			@media only screen and (min-width: 768px) {
+				display: inline-block;
+				border-bottom: none;
+			}
+
+			@media only screen and (min-width: 1200px) {
+				font-size: 22px;
+			}
+			
+			&.active {
+				color: @yellow;
+			}
+		}
+
+		@media only screen and (min-width: 768px) {
+			display: flex;	
+			justify-content: space-between;
+			background: none;
+		}
+	}
+
+	a {
+		color: #FFF;
+		text-decoration: none;
+		display: block;
+		
+		@media only screen and (min-width: 768px) {
+			display: inline-block;
+		}
+
+		
+		&:hover, &:focus, &:active, &.active {
+			color: @yellow;
+		}
+	}
+}
+
+.navigation--active {
+	background-color: #15588D;
+	opacity: 0.95;
+	filter: Alpha(Opacity=95);/*IE7 fix*/
+}
+
+.navigation__toggle-button {
+	content: "";
+	display: block;
+	cursor: pointer;
+	width: 36px;
+	height: 30px;
+	position: absolute;
+	right: @right;
+	top: @top;
+	background: url("../img/icons/nav-icon.png");
+	background-repeat: no-repeat;
+	
+	&:focus, &:active, &:hover {		
+		background: url("../img/icons/nav-icon-active.png");
+		background-repeat: no-repeat;
+	}
+
+
+	@media only screen and (min-width: 768px) {
+		display: none;
+	}
+
+}
+
+.navigation__toggle-button--active {
+	background-image: url("../img/icons/button-close.png");
+	background-repeat: no-repeat;
+	&:focus, &:active, &:hover {
+		background-image: url("../img/icons/button-close.png");
+		background-repeat: no-repeat;
+	}
+}

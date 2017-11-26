@@ -1,0 +1,83 @@
+.header {
+	position: relative;
+	background-image: url("../img/bg/my-bg.jpg");
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	text-align: center;
+	color: #FFF;
+	height: @header_height--mobile;
+	padding-top: 50px;
+	
+	@media only screen and (min-width: 768px) {
+		height: @header_height--tablet;
+		padding-top: 60px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		height: @header_height--desctop;
+	}
+}
+
+.header__container {
+	width: 100%;
+	margin: 0 auto;
+	
+	@media only screen and (min-width: 768px) {
+		width: 450px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		width: 650px;
+	}
+	
+}
+
+
+.header__user-photo {
+	-webkit-border-radius: 55px;
+	        border-radius: 55px;
+	box-shadow: @header_shadow;
+	margin-bottom: 35px;
+	
+	@media only screen and (min-width: 768px) {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		margin-top: 90px;		
+	}
+}
+
+
+.header__user-name {	
+	text-shadow: @header_shadow;
+	font-size: 26px;
+	line-height: 1.5;
+	font-weight: 700;
+	
+	@media only screen and (min-width: 768px) {
+		font-size: 42px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 56px;		
+	}
+}
+
+.header__user_profession {	
+	text-shadow: @header_shadow;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 700;
+	
+	@media only screen and (min-width: 768px) {
+		font-size: 20px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 26px;		
+	}
+}
