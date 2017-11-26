@@ -160,7 +160,7 @@ p {
 @media only screen and (min-width: 768px) {
   .navigation ul li {
     display: inline-block;
-    border-bottom: none;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -412,7 +412,6 @@ a.mouse_scroll:focus {
 @media only screen and (min-width: 768px) {
   .header {
     height: 560px;
-    padding-top: 60px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -448,7 +447,8 @@ a.mouse_scroll:focus {
 }
 @media only screen and (min-width: 1200px) {
   .header__user-photo {
-    margin-top: 90px;
+    margin-top: 110px;
+    margin-bottom: 20px;
   }
 }
 .header__user-name {
@@ -470,7 +470,7 @@ a.mouse_scroll:focus {
 .header__user_profession {
   text-shadow: 0px 0px 40px 0px #48779f;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   font-weight: 700;
 }
 @media only screen and (min-width: 768px) {
