@@ -1,0 +1,27 @@
+.download-button {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 12px 25px;
+	white-space: nowrap;
+	box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
+	background-color: @blue;
+	-webkit-border-radius: 25px;
+	        border-radius: 25px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	
+	&:hover, &:focus {
+		background-color: #fff;
+		color: @blue;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&:active, &.active {
+		background-color: @blue;
+		cursor: pointer;
+		color: @yellow;
+	}
+}

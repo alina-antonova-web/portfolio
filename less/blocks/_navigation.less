@@ -3,7 +3,6 @@
 
 .navigation {
 	padding-top: 95px;
-	height: @header_height--mobile;
 	font-size: 18px;
 	font-weight: 700;
 	color: #fff;
@@ -13,7 +12,6 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 3;
 	
 	@media only screen and (min-width: 768px) {
 		position: relative;
@@ -78,6 +76,8 @@
 	background-color: #15588D;
 	opacity: 0.95;
 	filter: Alpha(Opacity=95);/*IE7 fix*/
+	height: @header_height--mobile;
+	z-index: 3;
 }
 
 .navigation__toggle-button {
