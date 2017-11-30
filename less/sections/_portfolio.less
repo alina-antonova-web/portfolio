@@ -1,0 +1,115 @@
+#portfolio {
+	text-align: center;
+	
+	@media only screen and (min-width: 1200px) {
+		background-image: url("../img/bg/gear.png");
+		background-position: center left;
+		background-repeat: no-repeat;
+	}
+}
+
+.project {
+	margin: 20px auto;
+	color: #000;
+	text-align: left;
+	max-width: 360px;
+}
+
+.project__maket {
+	a {
+		position: relative;
+		display: inline-block;
+	}
+}
+
+.img-hover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	background-color: rgba(0, 82, 194, 0.9);
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	transition: top 0.5s ease-out;
+	-webkit-transform: translate();
+	   -moz-transform: translate();
+	    -ms-transform: translate();
+	     -o-transform: translate();
+	        transform: translate();
+	
+	i.fa {
+		font-size: 64px;
+		position: absolute;
+		top: 25%;
+		left: 40%;
+		
+		@media only screen and (min-width: 768px) {
+			font-size: 34px;
+		}
+		
+		@media only screen and (min-width: 1200px) {
+			font-size: 64px;
+		}
+		
+	}
+
+	span {
+		display: inline-block;
+		font-size: 26px;
+		margin-top: 100px;
+		
+		@media only screen and (min-width: 768px) {
+			margin-top: 50px;
+			font-size: 20px;
+		}
+		
+		@media only screen and (min-width: 1200px) {
+			margin-top: 100px;
+			font-size: 26px;
+		}
+		
+	}
+}
+
+
+
+.project__title {
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	
+	a {
+		color: #000;
+		text-decoration: none;
+		text-align: left;
+		border-bottom: 1px dotted;
+		
+		&:hover, &:focus, &:active, &.active {
+			color: @blue;
+		}
+	}
+
+	@media only screen and (min-width: 992px) {
+		font-size: 24px;
+	}
+
+}
+
+.project__description {
+	font-size: 14px;
+	line-height: 1.42;	
+	text-align: left;
+	
+	@media only screen and (min-width: 992px) {
+		font-size: 16px;
+		line-height: 1.5;	
+	}
+}
+
+#projects .mix {
+	display: none;
+}

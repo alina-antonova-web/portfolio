@@ -42,37 +42,36 @@ p {
 	padding: 30px 0;
 }
 
-.line {
-	border-top: 1px solid #e9eff3;
-}
 
-
-
-
-
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
-@media only screen and (max-width : 1200px) {
+.section {
+	position: relative;
+	padding: 40px 0;
+	
+	@media only screen and (min-width: 768px) {
+		padding: 60px 0;
+	}
+	
+	@media only screen and (min-width: 1200px) {
+		padding: 85px 0;
+	}
 	
 }
 
-/* Medium Devices, Desktops - adaptive styles bofore 992px */
-@media only screen and (max-width : 992px) {
-
+.section-title {
+	font-size: 32px;
+	font-weight: 700;
+	color: @blue;
+	line-height: 1;
+	margin-bottom: 10px;
+	
+	@media only screen and (min-width: 768px) {
+		font-size: 42px;
+		margin-bottom: 20px;
+	}
 }
 
-/* Small Devices, Tablets - adaptive styles bofore 768px */
-@media only screen and (max-width : 768px) {
 
+.section-title--center {
+	text-align: center;
 }
 
-/* Extra Small Devices, Phones - adaptive styles bofore 480px */
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina - adaptive styles bofore 320px */
-@media only screen and (max-width : 320px) {
-
-}

@@ -70,7 +70,7 @@
 	<!-- // Header -->
 
 	<!-- Resume -->
-	<div class="resume"  id="resume">
+	<div class="section"  id="resume">
 		<div class="container">
 			<div class="row">
 				
@@ -83,7 +83,7 @@
 				<!-- User resume -->
 				<div class="col-sm-10 col-lg-8">
 					<div class="resume-description">
-						<div class="resume-description__title">Резюме</div>
+						<div class="section-title">Резюме</div>
 						<div class="resume-description__user-name">Алина Антонова</div>
 						<div class="resume-description__about-user">30 лет, Ульм, Германия</div>
 						<div class="resume-description__about-user">Придерживаюсь правила: концентрации внимания на одном проекте и доведения его до логического конца, затем могу приступить к следующему.</div>
@@ -138,54 +138,109 @@
 	</div>
 	<!-- Resume -->
 
-
-	<div class="line"></div>
-
-
-
 	<!-- Portfolio -->
-	<div class="container" id="portfolio">
+	<div class="section"  id="portfolio">
+		<div class="container">
+			<div class="section-title section-title--center">Мои работы</div>
+		
+			<div class="filter-conteiner">
+				<ul class="filter-conteiner__block">
+					<li class="filter-conteiner__element">
+						<span class="filter filter-conteiner__button active" data-filter="all">все</span>
+					</li>
+					<li class="filter-conteiner__element">
+						<span class="filter filter-conteiner__button"  data-filter=".html-css">HTML+CSS</span>
+					</li>
+					<li class="filter-conteiner__element">
+						<span class="filter filter-conteiner__button"  data-filter=".bootstrap">bootstrap</span>
+					</li>
+					<li class="filter-conteiner__element">
+						<span class="filter filter-conteiner__button"  data-filter=".tutorial">учебные</span>
+					</li>
+					<li class="filter-conteiner__element">
+						<span class="filter filter-conteiner__button"  data-filter=".order">на заказ</span>
+					</li>
+				</ul>
+			</div>
 
-		<div class="block">
-			Мои работы
-		</div>
-
-		<div class="block">
-			Фильтр
-		</div>
-
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="block">
-					Работа 1
+			<div class="row" id="projects">
+				<div class="col-sm-4 mix html-css tutorial">
+					<div class="project">
+						<div class="project__maket">
+							<a href="#"><img src="usercontent/img/project_organica.jpg" alt=""></a>
+						</div>
+						<div class="project__title">
+							<a href="#">Учебный макет Organica</a>
+						</div>
+						<div class="project__description">
+							Вёрстка одностраничного сайта по PSD макету.
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					Работа 2
+				<div class="col-sm-4 mix bootstrap tutorial">
+					<div class="project">
+						<div class="project__maket">
+							<a href="#"><img src="usercontent/img/project_apollo.jpg" alt=""></a>
+						</div>
+						<div class="project__title">
+							<a href="#">Учебный макет Аполло</a>
+						</div>
+						<div class="project__description">
+							Вёрстка лендинга хостинг компании. Мобильная адаптивность.
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					Работа 3
+				<div class="col-sm-4 mix bootstrap tutorial">
+					<div class="project">
+						<div class="project__maket">
+							<a href="#"><img src="usercontent/img/project_portfolio.jpg" alt=""></a>
+						</div>
+						<div class="project__title">
+							<a href="#">Личный сайт портфолио</a>
+						</div>
+						<div class="project__description">
+							Вёрстка личного сайта портфолио, на котором Вы сейчас находитесь.
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="block">
-					Работа 4
+				<div class="col-sm-4 mix html-css order">
+					<div class="project">
+						<div class="project__maket">
+							<a href="#"><img src="usercontent/img/project_auto.jpg" alt=""></a>
+						</div>
+						<div class="project__title">
+							<a href="#">Промо сайт автомобиля</a>
+						</div>
+						<div class="project__description">
+							Вёрстка сайта для презентации концепта автомобиля.
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					Работа 5
+				<div class="col-sm-4 mix bootstrap order">
+					<div class="project">
+						<div class="project__maket">
+							<a href="#"><img src="usercontent/img/project_moto.jpg" alt=""></a>
+						</div>
+						<div class="project__title">
+							<a href="#">Магазин мотоциклов</a>
+						</div>
+						<div class="project__description">
+							Вёрстка лендинга для компании Indian Motorcycles.
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="block">
-					Работа 6
+				<div class="col-sm-4 mix html-css order">
+					<div class="project">
+						<div class="project__maket">
+							<a href="#"><img src="usercontent/img/project_music.jpg" alt=""></a>
+						</div>
+						<div class="project__title">
+							<a href="#">Магазин аудиотехники</a>
+						</div>
+						<div class="project__description">
+							Вёрстка страниц для магазина винтажной аудиотехники.
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -193,14 +248,14 @@
 	<!-- // Portfolio -->
 
 
-
 	<!-- Contacts -->
 	<div class="block-bg" id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<div class="block">
-						Контакты - текст
+					<div class="contacts">
+						<div class="contacts__title">Контакты</div>
+						<div class="contacts__text">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</div>
 					</div>
 
 					<div class="row">
@@ -257,6 +312,11 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+
+	<script src="js/navigation.js"></script>
+	<script src="js/project_img_hover.js"></script>
+	<script src="js/filtr.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
