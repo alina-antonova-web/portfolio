@@ -251,43 +251,75 @@
 
 
 	<!-- Contacts -->
-	<div class="block-bg" id="contacts">
+	<div class="section block-bg" id="contacts">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
-					<div class="contacts">
-						<div class="contacts__title">Контакты</div>
+				<div class="col-sm-6 col-lg-5">
+					<div class="section-contacts">
+						<div class="section-title section-title--white">Контакты</div>
 						<div class="contacts__text">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</div>
 					</div>
 
 					<div class="row">
 						<div class="col-lg-6">
-							<div class="block">
-								Email
+							<div class="contacts-block">
+								<div class="contacts-block__title">Email</div>
+								<div class="contacts-block__contact">
+									<a href="mailto:antonova.alina@gmail.com">antonova.alina@gmail.com</a>
+								</div>
 							</div>
-							<div class="block">
-								Skype
+							<div class="contacts-block">
+								<div class="contacts-block__title">Skype</div>
+								<div class="contacts-block__contact">
+									<a href="skype:maliniaka?call">maliniaka</a>
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="block">
-								Телефон
+							<div class="contacts-block">
+								<div class="contacts-block__title">Телефон</div>
+								<div class="contacts-block__contact">
+									<a href="tel:+4915754833931">+49 15754 833 931</a>
+								</div>
 							</div>
-							<div class="block">
-								Адрес
+							<div class="contacts-block">
+								<div class="contacts-block__title">Адрес</div>
+								<div class="contacts-block__contact">
+									Германия, Ульм
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="block">
-						Социальные иконки
+					<div class="contacts-block">
+						<div class="contacts-block__title">Социальные иконки</div>
+						<div class="contacts-block__contact">
+							<div class="social-icons">
+		                      	<a href="https://vk.com/maliniaka" class="fa fa-vk" aria-hidden="true"></a>
+		                      	<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+		                      	<a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+		                      	<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+		                      	<a href="https://github.com/alina3agit/" class="fa fa-github" aria-hidden="true"></a>
+			                </div>
+						</div>
 					</div>
 
 				</div>
-				<div class="col-sm-6">
-					<div class="block">
-						Форма
-					</div>
+				<div class="col-sm-6 col-lg-5">
+					<div class="form_title">Связаться со мной</div>
+					<form class="contacts_form">
+						<input class="form_item form_item--width100" type="text" id="fio" placeholder="Имя" required>
+						<input class="form_item form_item--width100" type="email" id="email" placeholder="some@mail.com" required>
+						<div class="form_row">
+							<input class="form_item form_item--width50" type="text" id="skype" placeholder="Skype" required>
+							<input class="form_item form_item--width50" type="text" id="phone" placeholder="Телефон" required>
+						</div>						
+						<div class="form_row">
+							<textarea class = "form_item form_item--textarea" id="message" rows="5" placeholder="Ваше сообщение"></textarea>
+							<img class="form_textarea_decoration hidden-xs" src="img/bg/pencil.png" alt="">
+						</div>
+						<input class = "form_button" type="submit" value="Отправить">
+					</form>
 				</div>
 			</div>
 		</div>
@@ -295,10 +327,14 @@
 	<!-- // Contacts -->
 
 	<!-- Copy -->
-	<div class="block-bg-copyright">
+	<div class="section block-bg-copyright">
 		<div class="container">
-			<div class="block">
-				Копирайт
+			<div class="block-copyright">
+				<div class="block-copyright__title">© 2016 Емельян Казаков</div>
+				<div class="block-copyright__text">
+					<p>Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+					<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="http://webcademy.ru" target="_blank">WebCademy.ru</a></p>
+				</div>
 			</div>
 		</div>
 	</div>

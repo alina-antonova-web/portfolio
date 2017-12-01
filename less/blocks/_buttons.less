@@ -24,3 +24,46 @@
 		color: @yellow;
 	}
 }
+
+
+.form_button {
+	display: inline-block;
+	margin: 5px 0;
+	padding: 15px 50px;
+	white-space: nowrap;
+	background-color: #065a97;
+	height: 60px;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	border: 2px solid #fff;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 1;
+	width: 290px;
+	
+	@media only screen and (min-width: 768px) {
+		font-size: 20px;
+		width: 210px;
+	}
+	
+	@media only screen and (min-width: 1200px) {
+		font-size: 22px;
+		width: 230px;
+	}
+
+	&:hover, &:focus {
+		background-color: #fff;
+		color: #065a97;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&:active, &.active {
+		background-color: #065a97;
+		cursor: pointer;
+		color: @yellow;
+		border: 2px solid @yellow;
+	}
+}
