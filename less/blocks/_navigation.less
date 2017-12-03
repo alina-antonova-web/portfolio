@@ -1,5 +1,4 @@
 .navigation {
-	padding-top: 95px;
 	font-size: 18px;
 	font-weight: 700;
 	color: #fff;
@@ -13,6 +12,7 @@
 	bottom: 0;
 	
 	@media only screen and (min-width: 768px) {
+		padding-top: 95px;
 		position: relative;
 		z-index: 1;
 		padding-top: 0;
@@ -77,5 +77,10 @@
 	filter: Alpha(Opacity=95);/*IE7 fix*/
 	bottom: 0;
 	position: fixed;
+	display: flex;
+	
+	ul {
+		margin: auto;
+	}
 }
 
