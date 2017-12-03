@@ -309,18 +309,17 @@
 				</div>
 				<div class="col-sm-6 col-lg-offset-1 col-lg-5">
 					<div class="form_title">Связаться со мной</div>
-					<form class="contacts_form">
-						<input class="form_item form_item--width100" type="text" id="fio" placeholder="Имя" required>
-						<input class="form_item form_item--width100" type="email" id="email" placeholder="some@mail.com" required>
-						<div class="form_row">
-							<input class="form_item form_item--width50" type="text" id="skype" placeholder="Skype" required>
-							<input class="form_item form_item--width50" type="text" id="phone" placeholder="Телефон" required>
+					<form class="contacts_form" id="contact-form">
+						<input class="form_item form_item--width100" type="text" name="fio" placeholder="Имя" >
+						<input class="form_item form_item--width100" type="email" name="email" placeholder="some@mail.com" >
+						<div class="form_row clearfix">
+							<input class="form_item form_item--width50" type="text" name="skype" placeholder="Skype" >
+							<input class="form_item form_item--width50" type="text" name="phone" placeholder="Телефон" >
 						</div>						
-						<div class="form_row">
-							<textarea class = "form_item form_item--textarea" id="message" rows="5" placeholder="Ваше сообщение"></textarea>
-							<img class="form_textarea_decoration hidden-xs" src="img/bg/pencil.png" alt="">
+						<div class="textarea_bg">
+							<textarea class = "form_item form_item--textarea" name="message" rows="5" placeholder="Ваше сообщение"></textarea>
 						</div>
-						<input class = "form_button" type="submit" value="Отправить">
+						<input class="form_button" type="submit" value="Отправить">
 					</form>
 				</div>
 			</div>
@@ -351,6 +350,8 @@
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="libs/jquery/jquery.validate.js"></script>
+
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
@@ -360,6 +361,7 @@
 	<script src="js/navigation.js"></script>
 	<script src="js/project_img_hover.js"></script>
 	<script src="js/filtr.js"></script>
+	<script src="js/validate_form.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

@@ -1,0 +1,93 @@
+
+
+.form_title {
+	color: #FFF;
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	@media only screen and (min-width: 768px) {
+		margin-top: 0;
+	}
+}
+
+.contacts_form {
+	position: relative;
+}
+
+.form_row {
+	position: relative;
+	.form_item--width50:last-of-type {
+    	float: right;
+    }
+}
+
+.form_item {
+    padding: 12px 20px;
+    margin: 5px auto;
+    box-sizing: border-box;    
+    border-radius: 10px;
+    color: rgb(0%, 35%, 60%, 0.5);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    &:hover, &:focus, &:active, &.active {
+		border: 2px solid #a2d1f4;
+		color: rgb(0%, 35%, 60%, 1); //#00599a
+	}
+}
+
+.form_item--width100 {
+    width: 100%;	
+}
+
+.form_item--width50 {
+    width: 49%;
+    float: left;
+}
+
+.form_item--textarea {
+	width: 100%;
+}
+
+.textarea_bg {
+	position: relative;
+	&::after{
+		display: block;
+		content: "";
+		width: 203px;
+		height: 153px;
+		background-image: url('../img/bg/pencil.png');
+		position: absolute;
+		right: -70px;
+		bottom: -125px;
+	}
+}
+
+
+label.error {
+	background-color: #B22222;
+	display: block;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	color: #FFF;
+	padding: 5px 15px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: -2px;
+	position: relative;
+	
+	&::after {
+		content: " ";
+		position: absolute;
+		bottom: 100%;
+		left: 20px;
+		margin-left: -8px;
+		width: 0;
+		height: 0;
+		border-bottom: 8px solid #B22222;
+		border-right: 8px solid transparent;
+		border-left: 8px solid transparent;
+	}
+}
