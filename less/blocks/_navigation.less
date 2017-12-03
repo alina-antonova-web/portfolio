@@ -4,11 +4,13 @@
 	font-weight: 700;
 	color: #fff;
 	text-align: center;
+	z-index: 3;
 	
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
+	bottom: 0;
 	
 	@media only screen and (min-width: 768px) {
 		position: relative;
@@ -73,39 +75,7 @@
 	background-color: #15588D;
 	opacity: 0.95;
 	filter: Alpha(Opacity=95);/*IE7 fix*/
-	height: @header_height--mobile;
-	z-index: 3;
+	bottom: 0;
+	position: fixed;
 }
 
-.navigation__toggle-button {
-	content: "";
-	display: block;
-	cursor: pointer;
-	width: 36px;
-	height: 30px;
-	position: absolute;
-	right: 15px;
-	top: 30px;
-	background: url("../img/icons/nav-icon.png");
-	background-repeat: no-repeat;
-	
-	&:focus, &:active, &:hover {		
-		background: url("../img/icons/nav-icon-active.png");
-		background-repeat: no-repeat;
-	}
-
-
-	@media only screen and (min-width: 768px) {
-		display: none;
-	}
-
-}
-
-.navigation__toggle-button--active {
-	background-image: url("../img/icons/button-close.png");
-	background-repeat: no-repeat;
-	&:focus, &:active, &:hover {
-		background-image: url("../img/icons/button-close.png");
-		background-repeat: no-repeat;
-	}
-}

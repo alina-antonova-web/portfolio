@@ -2,53 +2,43 @@ $(document).ready(function() {
 
 	// Navigation 
 
-	var pull = $("#navigation__toggle");
-	var nav = $("#navigation__items");
+	var navButton = $("#navigation__toggle");
+	var navMenu = $("#navigation__items");
+	var navContainer = $("#navigation");
 
-	$(pull).on('click', function(e) {
+
+	$(navButton).on('click', function(e) {
 		e.preventDefault();		
-		$(nav).slideToggle();
-		$(this).toggleClass('navigation__toggle-button--active');
-		$("#navigation").toggleClass('navigation--active');
+		navButtonToggle();
 	});
 
 	$(window).resize(function() {
 		var w = $(window).width();
-		if(w > 992) {
-			nav.removeAttr('style');
-			pull.removeClass('navigation__toggle-button--active');
-			$("#navigation").removeClass('navigation--active');
-		} else {
-
-	    }
+		if(w > 768) {
+			navMenu.removeAttr('style');
+			navButton.removeClass('navigation__toggle-button--active');
+			navContainer.removeClass('navigation--active');
+		}
 	});
 
 	// Скрываем меню при клике на него на смартфоне и планцете
-	// По клику на ссылку в меню запускаем ф-ю fnstart();
+	// По клику на ссылку в меню запускаем ф-ю navButtonToggle();
 	$('nav.navigation a').on("click", function(){
-		fnstart();
+		if ( navButton.hasClass("active")  ) {
+			navButtonToggle();
+		}
 	});
 
-	// В ф-ии fnstart(); проверяем - если меню открыто (проверяем по наличию класса --active у кнопки pull)
-	// тогда убираем класс модификатор --active у кнопки pull
-	// и сворачиваем/скрываем меню 
-	function fnstart(){	
-		if ( pull.hasClass("navigation__toggle-button--active")  ) {
-   			pull.toggleClass('navigation__toggle-button--active');
-   			$("#navigation").toggleClass('navigation--active');
-			nav.slideToggle();
-		}
+	function navButtonToggle(){	
+		navButton.toggleClass('active');
+		navContainer.toggleClass('navigation--active');
+		navMenu.slideToggle();		
 	};
 
 
-
-	
-
 	//slide2id
-	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id,a.mouse_scroll").mPageScroll2id({
 	    highlightSelector:"nav a"
 	});
-
-
 	
 });
