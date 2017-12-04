@@ -4,7 +4,7 @@ $(document).ready(function() {
 		rules: {
 			fio: { required: true },
 			email: { required: true, email: true },
-			message: { required: true }
+			user_message: { required: true }
 		},
 
 		messages: {
@@ -13,9 +13,34 @@ $(document).ready(function() {
 				required: "Пожалуйста, введите свой email.",
 				email: "Email должен быть в формате name@domaim.com. Возможно Вы ввели email с ошибкой."
 			},
-			message: "Пожалуйста, введите текст сообщения.",
+			user_message: "Пожалуйста, введите текст сообщения.",
 
+		},
+
+		submitHandler: function() {
+			ajaxFormSubmit();
 		}
 	});
+
+
+	// AJAX form send-answer
+
+	function ajaxFormSubmit(){
+
+		var string = $("#contact-form").serialize();
+
+		$.ajax({
+			type: "POST",
+			url: "php/mail.php",
+			data: string,
+
+			success: function(html){
+				$("#contact-form").slideUp(800);
+				$('#answer').html(html);
+			}
+		});
+
+		return false;
+	}
 
 });

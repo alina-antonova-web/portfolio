@@ -210,13 +210,13 @@
 				<div class="col-sm-4 mix html-css order">
 					<div class="project">
 						<div class="project__maket">
-							<a href="usercontent/img/full/car-concept.png" class="fancybox" rel="group" title="Промо сайт автомобиля"><img src="usercontent/img/project_auto.jpg" alt=""></a>
+							<a href="usercontent/img/full/tyres.spb.ru.png" class="fancybox" rel="group" title="Интернет-магазин шин и дисков"><img src="usercontent/img/tyres.spb.ru.jpg" alt=""></a>
 						</div>
 						<div class="project__title">
-							<a href="#">Промо сайт автомобиля</a>
+							<a href="http://tyres.spb.ru/" target="_blank">Магазин шин и дисков</a>
 						</div>
 						<div class="project__description">
-							Вёрстка сайта для презентации концепта автомобиля.
+							Вёрстка сайта, администрирование базы данных MySQL, написание javascript, PHP скриптов, Ajax запросов.
 						</div>
 					</div>
 				</div>
@@ -226,7 +226,7 @@
 							<a href="usercontent/img/full/motorcycles.jpg" class="fancybox" rel="group" title="Магазин мотоциклов"><img src="usercontent/img/project_moto.jpg" alt=""></a>
 						</div>
 						<div class="project__title">
-							<a href="#">Магазин мотоциклов</a>
+							<a href="usercontent/img/full/motorcycles.jpg" target="_blank">Магазин мотоциклов</a>
 						</div>
 						<div class="project__description">
 							Вёрстка лендинга для компании Indian Motorcycles.
@@ -239,7 +239,7 @@
 							<a href="usercontent/img/full/music.jpg" class="fancybox" rel="group" title="Магазин аудиотехники"><img src="usercontent/img/project_music.jpg" alt=""></a>
 						</div>
 						<div class="project__title">
-							<a href="#">Магазин аудиотехники</a>
+							<a href="usercontent/img/full/music.jpg" target="_blank">Магазин аудиотехники</a>
 						</div>
 						<div class="project__description">
 							Вёрстка страниц для магазина винтажной аудиотехники.
@@ -310,6 +310,11 @@
 				<div class="col-sm-6 col-lg-offset-1 col-lg-5">
 					<div class="form_title">Связаться со мной</div>
 					<form class="contacts_form" id="contact-form">
+						<input type="hidden" name="project_name" value="Alina-web">
+						<input type="hidden" name="admin_email" value="antonova.alina@gmail.com">
+						<input type="hidden" name="form_subject" value="Обратная связь">
+
+
 						<input class="form_item form_item--width100" type="text" name="fio" placeholder="Имя" >
 						<input class="form_item form_item--width100" type="email" name="email" placeholder="some@mail.com" >
 						<div class="form_row clearfix">
@@ -317,10 +322,12 @@
 							<input class="form_item form_item--width50" type="text" name="phone" placeholder="Телефон" >
 						</div>						
 						<div class="textarea_bg">
-							<textarea class = "form_item form_item--textarea" name="message" rows="5" placeholder="Ваше сообщение"></textarea>
+							<textarea class = "form_item form_item--textarea" name="user_message" rows="5" placeholder="Ваше сообщение"></textarea>
 						</div>
 						<input class="form_button" type="submit" value="Отправить">
 					</form>
+
+					<div id="answer"></div>
 				</div>
 			</div>
 		</div>
