@@ -795,15 +795,17 @@ a.mouse_scroll:focus {
 .textarea_bg {
   position: relative;
 }
-.textarea_bg::after {
-  display: block;
-  content: "";
-  width: 203px;
-  height: 153px;
-  background-image: url('../img/bg/pencil.png');
-  position: absolute;
-  right: -70px;
-  bottom: -125px;
+@media only screen and (min-width: 768px) {
+  .textarea_bg::after {
+    display: block;
+    content: "";
+    width: 203px;
+    height: 153px;
+    background-image: url('../img/bg/pencil.png');
+    position: absolute;
+    right: -70px;
+    bottom: -125px;
+  }
 }
 label.error {
   background-color: #B22222;

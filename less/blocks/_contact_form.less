@@ -55,15 +55,17 @@
 
 .textarea_bg {
 	position: relative;
-	&::after{
-		display: block;
-		content: "";
-		width: 203px;
-		height: 153px;
-		background-image: url('../img/bg/pencil.png');
-		position: absolute;
-		right: -70px;
-		bottom: -125px;
+	@media only screen and (min-width: 768px) {
+		&::after{
+			display: block;
+			content: "";
+			width: 203px;
+			height: 153px;
+			background-image: url('../img/bg/pencil.png');
+			position: absolute;
+			right: -70px;
+			bottom: -125px;
+		}
 	}
 }
 
