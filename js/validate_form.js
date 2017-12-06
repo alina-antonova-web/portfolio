@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	var submitted=false;
+
 	$('#contact-form').validate({
 		rules: {
 			fio: { required: true },
@@ -18,7 +20,8 @@ $(document).ready(function() {
 		},
 
 		submitHandler: function() {
-			ajaxFormSubmit();
+			//ajaxFormSubmit();
+			gForm();
 		}
 	});
 
@@ -41,6 +44,14 @@ $(document).ready(function() {
 		});
 
 		return false;
+	}
+
+
+	// Google form
+
+	function gForm() {
+		$("#contact-form").slideUp(800);
+		$('#answer').html("<div class='contact-form__success'>Форма отправлена успешно!</div>");
 	}
 
 });
