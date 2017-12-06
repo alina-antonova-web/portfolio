@@ -4,18 +4,18 @@ $(document).ready(function() {
 
 	$('#contact-form').validate({
 		rules: {
-			fio: { required: true },
-			email: { required: true, email: true },
-			user_message: { required: true }
+			entry.1468846692: { required: true },
+			entry.29343622: { required: true, email: true },
+			entry.1953925097: { required: true }
 		},
 
 		messages: {
-			fio: "Пожалуйста, введите своё имя.",
-			email: {
+			entry.1468846692: "Пожалуйста, введите своё имя.",
+			entry.29343622: {
 				required: "Пожалуйста, введите свой email.",
 				email: "Email должен быть в формате name@domaim.com. Возможно Вы ввели email с ошибкой."
 			},
-			user_message: "Пожалуйста, введите текст сообщения.",
+			entry.1953925097: "Пожалуйста, введите текст сообщения.",
 
 		},
 
