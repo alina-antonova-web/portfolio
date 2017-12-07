@@ -33,13 +33,10 @@ $(document).ready(function() {
 			type: "POST",
 			url: "https://alina-web.000webhostapp.com/php/mail.php",
 			data: string,
-			async:true,
-	        dataType : 'jsonp',   //you may use jsonp for cross origin request
-	        crossDomain:true,
 
 			success: function(html){
 				$("#contact-form").slideUp(800);
-				$('#answer').html(html);
+				$('#answer').html("<div class='contact-form__success'>Форма отправлена успешно!</div>");
 			}
 		});
 
