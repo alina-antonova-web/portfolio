@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "POST",
-			url: "https://alina-web.000webhostapp.com/php/mail.php",
+			url: "https://alina-web.000webhostapp.com/php/mail_from_githubForm.php",
 			data: string,
 
 			success: function(html){
